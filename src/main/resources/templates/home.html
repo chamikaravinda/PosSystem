@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Title</title>
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/custom.css"/>
+    <script type="text/javascript" src="/assets/js/custom.js"></script>
 
-    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico"/>
+
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico"/>
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700italic,700,900,900italic"
           rel="stylesheet">
@@ -19,57 +22,55 @@
         }
     </style>
 
-    <link type="text/css" rel="stylesheet" href="assets/css/selectize.css">
+    <link type="text/css" rel="stylesheet" href="/assets/css/selectize.css">
     <!-- Icons.css -->
-    <link type="text/css" rel="stylesheet" href="assets/icons/fuse-icon-font/style.css">
+    <link type="text/css" rel="stylesheet" href="/assets/icons/fuse-icon-font/style.css">
     <!-- Animate.css -->
-    <link type="text/css" rel="stylesheet" href="assets/node_modules/animate.css/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="/assets/node_modules/animate.css/animate.min.css">
     <!-- PNotify -->
-    <link type="text/css" rel="stylesheet" href="assets/node_modules/pnotify/dist/PNotifyBrightTheme.css">
+    <link type="text/css" rel="stylesheet" href="/assets/node_modules/pnotify/dist/PNotifyBrightTheme.css">
     <!-- Nvd3 - D3 Charts -->
-    <link type="text/css" rel="stylesheet" href="assets/node_modules/nvd3/build/nv.d3.min.css"/>
+    <link type="text/css" rel="stylesheet" href="/assets/node_modules/nvd3/build/nv.d3.min.css"/>
     <!-- Perfect Scrollbar -->
-    <link type="text/css" rel="stylesheet" href="assets/node_modules/perfect-scrollbar/css/perfect-scrollbar.css"/>
+    <link type="text/css" rel="stylesheet" href="/assets/node_modules/perfect-scrollbar/css/perfect-scrollbar.css"/>
     <!-- Fuse Html -->
-    <link type="text/css" rel="stylesheet" href="assets/fuse-html/fuse-html.min.css"/>
+    <link type="text/css" rel="stylesheet" href="/assets/fuse-html/fuse-html.min.css"/>
     <!-- Main CSS -->
-    <link type="text/css" rel="stylesheet" href="assets/css/main.css">
+    <link type="text/css" rel="stylesheet" href="/assets/css/main.css">
     <!-- / STYLESHEETS -->
 
-    <!-- JAVASCRIPT -->
-    <script type="text/javascript" src="assets/js/projectFunction.js"></script>
     <!-- jQuery -->
-    <script type="text/javascript" src="assets/node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/node_modules/jquery/dist/jquery.min.js"></script>
     <!-- Mobile Detect -->
-    <script type="text/javascript" src="assets/node_modules/mobile-detect/mobile-detect.min.js"></script>
+    <script type="text/javascript" src="/assets/node_modules/mobile-detect/mobile-detect.min.js"></script>
     <!-- Perfect Scrollbar -->
-    <script type="text/javascript" src="assets/node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+    <script type="text/javascript" src="/assets/node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
     <!-- Popper.js -->
-    <script type="text/javascript" src="assets/node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script type="text/javascript" src="/assets/node_modules/popper.js/dist/umd/popper.min.js"></script>
     <!-- Bootstrap -->
-    <script type="text/javascript" src="assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- Nvd3 - D3 Charts -->
-    <script type="text/javascript" src="assets/node_modules/d3/d3.min.js"></script>
-    <script type="text/javascript" src="assets/node_modules/nvd3/build/nv.d3.min.js"></script>
+    <script type="text/javascript" src="/assets/node_modules/d3/d3.min.js"></script>
+    <script type="text/javascript" src="/assets/node_modules/nvd3/build/nv.d3.min.js"></script>
     <!-- Data tables -->
-    <script type="text/javascript" src="assets/node_modules/datatables.net/js/jquery.dataTables.js"></script>
-    <script type="text/javascript" src="assets/node_modules/datatables-responsive/js/dataTables.responsive.js"></script>
+    <script type="text/javascript" src="/assets/node_modules/datatables.net/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="/assets/node_modules/datatables-responsive/js/dataTables.responsive.js"></script>
     <!-- PNotify -->
-    <script type="text/javascript" src="assets/node_modules/pnotify/dist/iife/PNotify.js"></script>
-    <script type="text/javascript" src="assets/node_modules/pnotify/dist/iife/PNotifyStyleMaterial.js"></script>
-    <script type="text/javascript" src="assets/node_modules/pnotify/dist/iife/PNotifyButtons.js"></script>
-    <script type="text/javascript" src="assets/node_modules/pnotify/dist/iife/PNotifyCallbacks.js"></script>
-    <script type="text/javascript" src="assets/node_modules/pnotify/dist/iife/PNotifyMobile.js"></script>
-    <script type="text/javascript" src="assets/node_modules/pnotify/dist/iife/PNotifyHistory.js"></script>
-    <script type="text/javascript" src="assets/node_modules/pnotify/dist/iife/PNotifyDesktop.js"></script>
-    <script type="text/javascript" src="assets/node_modules/pnotify/dist/iife/PNotifyConfirm.js"></script>
-    <script type="text/javascript" src="assets/node_modules/pnotify/dist/iife/PNotifyReference.js"></script>
+    <script type="text/javascript" src="/assets/node_modules/pnotify/dist/iife/PNotify.js"></script>
+    <script type="text/javascript" src="/assets/node_modules/pnotify/dist/iife/PNotifyStyleMaterial.js"></script>
+    <script type="text/javascript" src="/assets/node_modules/pnotify/dist/iife/PNotifyButtons.js"></script>
+    <script type="text/javascript" src="/assets/node_modules/pnotify/dist/iife/PNotifyCallbacks.js"></script>
+    <script type="text/javascript" src="/assets/node_modules/pnotify/dist/iife/PNotifyMobile.js"></script>
+    <script type="text/javascript" src="/assets/node_modules/pnotify/dist/iife/PNotifyHistory.js"></script>
+    <script type="text/javascript" src="/assets/node_modules/pnotify/dist/iife/PNotifyDesktop.js"></script>
+    <script type="text/javascript" src="/assets/node_modules/pnotify/dist/iife/PNotifyConfirm.js"></script>
+    <script type="text/javascript" src="/assets/node_modules/pnotify/dist/iife/PNotifyReference.js"></script>
     <!-- Fuse Html -->
-    <script type="text/javascript" src="assets/fuse-html/fuse-html.min.js"></script>
+    <script type="text/javascript" src="/assets/fuse-html/fuse-html.min.js"></script>
     <!-- Main JS -->
-    <script type="text/javascript" src="assets/js/main.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.i18n.properties.js"></script>
-    <script type="text/javascript" src="assets/js/selectize.min.js"></script>
+    <script type="text/javascript" src="/assets/js/main.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.i18n.properties.js"></script>
+    <script type="text/javascript" src="/assets/js/selectize.min.js"></script>
     <!-- Date range picker -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
@@ -78,39 +79,39 @@
 </head>
 <body class="layout layout-vertical layout-left-navigation layout-below-toolbar layout-below-footer">
 <main>
-<!--    <div id="wrapper">-->
-<!--        <aside id="aside" class="aside aside-left" data-fuse-bar="aside" data-fuse-bar-media-step="md"-->
-<!--               data-fuse-bar-position="left">-->
-<!--            <div class="aside-content bg-primary-700 text-auto">-->
+    <div id="wrapper">
+        <aside id="aside" class="aside aside-left" data-fuse-bar="aside" data-fuse-bar-media-step="md"
+               data-fuse-bar-position="left">
+            <div class="aside-content bg-primary-700 text-auto">
 
-<!--                <div class="aside-toolbar">-->
+                <div class="aside-toolbar">
 
-<!--                    <div class="logo">-->
-<!--                        <span class="logo-icon">M</span>-->
-<!--                        <span class="logo-text" th:text="${appName}"></span>-->
-<!--                    </div>-->
+                    <div class="logo">
+                        <span class="logo-icon">M</span>
+                        <span class="logo-text" th:text="${appName}"></span>
+                    </div>
 
-<!--                    <button id="toggle-fold-aside-button" type="button" class="btn btn-icon d-none d-lg-block"-->
-<!--                            data-fuse-aside-toggle-fold>-->
-<!--                        <i class="icon icon-backburger"></i>-->
-<!--                    </button>-->
+                    <button id="toggle-fold-aside-button" type="button" class="btn btn-icon d-none d-lg-block"
+                            data-fuse-aside-toggle-fold>
+                        <i class="icon icon-backburger"></i>
+                    </button>
 
-<!--                </div>-->
+                </div>
 
-<!--                <ul class="nav flex-column custom-scrollbar" id="sidenav" data-children=".nav-item">-->
+                <ul class="nav flex-column custom-scrollbar" id="sidenav" data-children=".nav-item">
 
-<!--                    <li class="subheader">-->
-<!--                        <span>Student Management System</span>-->
-<!--                    </li>-->
+                    <li class="subheader ml-5">
+                        <span>New Maruthi Printers</span>
+                    </li>
 
-<!--                    <li class="nav-item">-->
-<!--                        <a id = "Courses" class="nav-link ripple active fuse-ripple-ready" onclick="changeColor('Courses')" href="#">-->
-<!--                            <i class="icon s-4 icon-clipboard-text"></i>-->
+                    <li class="nav-item">
+                        <a id = "Materials" class="nav-link ripple active fuse-ripple-ready" onclick="loadContent('Materials')" href="#">
+                            <i class="icon s-4 icon-clipboard-text"></i>
 
-<!--                            <span>Setup Courses</span>-->
+                            <span>Setup Materials</span>
 
-<!--                        </a>-->
-<!--                    </li>-->
+                        </a>
+                    </li>
 
 <!--                    <li class="nav-item" role="tab" id="heading-dashboards4">-->
 <!--                        <a class="nav-link ripple with-arrow collapsed active" data-toggle="collapse"-->
@@ -119,7 +120,7 @@
 
 <!--                            <i class="icon s-4 icon-tile-four"></i>-->
 
-<!--                            <span>Setup Modules</span>-->
+<!--                            <span>Manage Materials</span>-->
 
 <!--                        </a>-->
 
@@ -127,9 +128,9 @@
 <!--                            aria-labelledby="heading-dashboards4" data-children=".nav-item">-->
 
 <!--                            <li class="nav-item">-->
-<!--                                <a id="Modules" class="nav-link ripple active fuse-ripple-ready" onclick="changeColor('Modules')" href="#">-->
+<!--                                <a id="Modules" class="nav-link ripple active fuse-ripple-ready" onclick="changeColor('Add Material')" href="#">-->
 
-<!--                                    <span>Manage Modules</span>-->
+<!--                                    <span>Add Material</span>-->
 
 <!--                                </a>-->
 <!--                            </li>-->
@@ -144,146 +145,113 @@
 
 <!--                        </ul>-->
 <!--                    </li>-->
+                </ul>
+            </div>
 
-<!--                    <li class="nav-item" role="tab" id="heading-dashboards">-->
-<!--                        <a class="nav-link ripple with-arrow collapsed" data-toggle="collapse"-->
-<!--                           data-target="#collapse-dashboards" href="#" aria-expanded="false"-->
-<!--                           aria-controls="collapse-dashboards">-->
+        </aside>
+        <div class="content-wrapper">
+            <nav id="toolbar" class="bg-white">
 
-<!--                            <i class="icon s-4 icon-tile-four"></i>-->
+                <div class="row no-gutters align-items-center flex-nowrap">
 
-<!--                            <span>Manage Batch</span>-->
+                    <div class="col">
+                    </div>
 
-<!--                        </a>-->
+                    <div class="col-auto">
 
-<!--                        <ul id="collapse-dashboards" class='collapse ' role="tabpanel"-->
-<!--                            aria-labelledby="heading-dashboards" data-children=".nav-item">-->
+                        <div class="row no-gutters align-items-center justify-content-end">
 
-<!--                            <li class="nav-item">-->
-<!--                                <a id="Batch" class="nav-link ripple" onclick="changeColor('Batch')" href="#">-->
+                            <div class="user-menu-button dropdown">
 
-<!--                                    <span>Batch</span>-->
+                                <div class="dropdown-toggle ripple row align-items-center no-gutters px-2 px-sm-4"
+                                     role="button" id="dropdownUserMenu" data-toggle="dropdown" aria-haspopup="true"
+                                     aria-expanded="false">
+                                    <div class="avatar-wrapper">
+                                        <img class="avatar" src="/assets/images/avatars/profile.jpg">
+                                        <i class="status text-green icon-checkbox-marked-circle s-4"></i>
+                                    </div>
+                                    <span class="username mx-3 d-none d-md-block">John Doe</span>
+                                </div>
 
-<!--                                </a>-->
-<!--                            </li>-->
+                                <div class="dropdown-menu" aria-labelledby="dropdownUserMenu">
 
-<!--                            <li class="nav-item">-->
-<!--                                <a id="Modules_to_Batch" class="nav-link ripple" onclick="changeColor('Modules_to_Batch')" href="#">-->
-
-<!--                                    <span>Add Modules to Batch</span>-->
-
-<!--                                </a>-->
-<!--                            </li>-->
-
-<!--                        </ul>-->
-<!--                    </li>-->
-<!--                </ul>-->
-<!--            </div>-->
-
-<!--        </aside>-->
-<!--        <div class="content-wrapper">-->
-<!--            <nav id="toolbar" class="bg-white">-->
-
-<!--                <div class="row no-gutters align-items-center flex-nowrap">-->
-
-<!--                    <div class="col">-->
-<!--                    </div>-->
-
-<!--                    <div class="col-auto">-->
-
-<!--                        <div class="row no-gutters align-items-center justify-content-end">-->
-
-<!--                            <div class="user-menu-button dropdown">-->
-
-<!--                                <div class="dropdown-toggle ripple row align-items-center no-gutters px-2 px-sm-4"-->
-<!--                                     role="button" id="dropdownUserMenu" data-toggle="dropdown" aria-haspopup="true"-->
-<!--                                     aria-expanded="false">-->
-<!--                                    <div class="avatar-wrapper">-->
-<!--                                        <img class="avatar" src="assets/images/avatars/profile.jpg">-->
-<!--                                        <i class="status text-green icon-checkbox-marked-circle s-4"></i>-->
-<!--                                    </div>-->
-<!--                                    <span class="username mx-3 d-none d-md-block">John Doe</span>-->
-<!--                                </div>-->
-
-<!--                                <div class="dropdown-menu" aria-labelledby="dropdownUserMenu">-->
-
-<!--                                    <a id="My_Profile" class="dropdown-item">-->
-<!--                                        <div class="row no-gutters align-items-center flex-nowrap">-->
-<!--                                            <i class="icon-account"></i>-->
-<!--                                            <span class="px-3">My Profile</span>-->
-<!--                                        </div>-->
-<!--                                    </a>-->
+                                    <a id="My_Profile" class="dropdown-item">
+                                        <div class="row no-gutters align-items-center flex-nowrap">
+                                            <i class="icon-account"></i>
+                                            <span class="px-3">My Profile</span>
+                                        </div>
+                                    </a>
 
 
 
-<!--                                    <a id="Inbox" class="dropdown-item" href="#" onclick="changeColor('Inbox')">-->
-<!--                                        <div class="row no-gutters align-items-center flex-nowrap">-->
-<!--                                            <i class="icon-email"></i>-->
-<!--                                            <span class="px-3">Inbox</span>-->
-<!--                                        </div>-->
-<!--                                    </a>-->
+                                    <a id="Inbox" class="dropdown-item" href="#" onclick="changeColor('Inbox')">
+                                        <div class="row no-gutters align-items-center flex-nowrap">
+                                            <i class="icon-email"></i>
+                                            <span class="px-3">Inbox</span>
+                                        </div>
+                                    </a>
 
-<!--                                    <a id="Online" class="dropdown-item" href="#" onclick="changeColor('Online')">-->
-<!--                                        <div class="row no-gutters align-items-center flex-nowrap">-->
-<!--                                            <i class="status text-green icon-checkbox-marked-circle"></i>-->
-<!--                                            <span class="px-3">Online</span>-->
-<!--                                        </div>-->
-<!--                                    </a>-->
+                                    <a id="Online" class="dropdown-item" href="#" onclick="changeColor('Online')">
+                                        <div class="row no-gutters align-items-center flex-nowrap">
+                                            <i class="status text-green icon-checkbox-marked-circle"></i>
+                                            <span class="px-3">Online</span>
+                                        </div>
+                                    </a>
 
-<!--                                    <div class="dropdown-divider"></div>-->
+                                    <div class="dropdown-divider"></div>
 
-<!--                                    <a class="dropdown-item" onclick="logout()">-->
-<!--                                        <div class="row no-gutters align-items-center flex-nowrap">-->
-<!--                                            <i class="icon-logout"></i>-->
-<!--                                            <span class="px-3">Logout</span>-->
-<!--                                        </div>-->
-<!--                                    </a>-->
+                                    <a class="dropdown-item" onclick="logout()">
+                                        <div class="row no-gutters align-items-center flex-nowrap">
+                                            <i class="icon-logout"></i>
+                                            <span class="px-3">Logout</span>
+                                        </div>
+                                    </a>
 
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="toolbar-separator"></div>-->
-<!--                            <div class="user-menu-button dropdown">-->
+                                </div>
+                            </div>
+                            <div class="toolbar-separator"></div>
+                            <div class="user-menu-button dropdown">
 
-<!--                                <div class="dropdown-toggle ripple row align-items-center no-gutters px-2 px-sm-4"-->
-<!--                                     role="button" id="moduleMenu" data-toggle="dropdown" aria-haspopup="true"-->
-<!--                                     aria-expanded="false">-->
-<!--                                    <span class="username mx-3 d-none d-md-block">Application</span>-->
-<!--                                </div>-->
+                                <div class="dropdown-toggle ripple row align-items-center no-gutters px-2 px-sm-4"
+                                     role="button" id="moduleMenu" data-toggle="dropdown" aria-haspopup="true"
+                                     aria-expanded="false">
+                                    <span class="username mx-3 d-none d-md-block">Application</span>
+                                </div>
 
-<!--                                <div class="dropdown-menu" aria-labelledby="moduleMenu">-->
+                                <div class="dropdown-menu" aria-labelledby="moduleMenu">
 
-<!--                                    <a id="Settings" class="dropdown-item" href="#" onclick="changeColor('Settings')">-->
-<!--                                        <div class="row no-gutters align-items-center flex-nowrap">-->
-<!--                                            <i class="icon-clipboard-text"></i>-->
-<!--                                            <span class="px-3">Settings</span>-->
-<!--                                        </div>-->
-<!--                                    </a>-->
+                                    <a id="Settings" class="dropdown-item" href="#" onclick="changeColor('Settings')">
+                                        <div class="row no-gutters align-items-center flex-nowrap">
+                                            <i class="icon-clipboard-text"></i>
+                                            <span class="px-3">Settings</span>
+                                        </div>
+                                    </a>
 
-<!--                                    <a id="Help" class="dropdown-item" href="#" onclick="changeColor('Help')">-->
-<!--                                        <div class="row no-gutters align-items-center flex-nowrap">-->
-<!--                                            <i class="icon-clipboard-plus"></i>-->
-<!--                                            <span class="px-3">Help</span>-->
-<!--                                        </div>-->
-<!--                                    </a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </nav>-->
-<!--            <div class="content custom-scrollbar">-->
+                                    <a id="Help" class="dropdown-item" href="#" onclick="changeColor('Help')">
+                                        <div class="row no-gutters align-items-center flex-nowrap">
+                                            <i class="icon-clipboard-plus"></i>
+                                            <span class="px-3">Help</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="content custom-scrollbar">
 
-<!--                <div class="page-layout blank p-6">-->
+                <div class="page-layout blank p-6">
 
-<!--                    &lt;!&ndash; CONTENT &ndash;&gt;-->
-<!--                    <div class="page-content"></div>-->
+                    <!-- CONTENT -->
+                    <div class="page-content">
+                    </div>
 
-<!--                </div>-->
+                </div>
 
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-    <img src="csa.jfif"/>
+            </div>
+        </div>
+    </div>
 </main>
 </body>
 <!-- Modal -->
@@ -292,7 +260,42 @@
 </div>
 <div id="simpleModal" class="modal fade" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
      aria-labelledby="exampleModalLiveLabel" aria-hidden="true"></div>
+</html>
+
 <script>
+    function loadContent(button) {
+        resetTabs();
+
+        if(button == "Materials"){
+            document.getElementById("Materials").style.backgroundColor = "#0123b3"; // forecolor
+            loadMaterial();
+        }
+    }
+    function resetTabs() {
+        document.getElementById("Materials").style.backgroundColor = "#2195f2"; // forecolor
+    }
+    function loadMaterial(){
+        try{
+            $.ajax({
+                url: "loadMaterial",
+                method: 'GET',
+                beforeSend: function () {
+                    $pageContent.display(loading);
+                },
+                success: function (data) {
+                    $pageContent.display(data);
+                },
+                error: function () {
+                    $pageContent.display(connectionError);
+                    msgError('Oh No!', 'Error.');
+                }
+            });
+        }
+        catch(e){
+            alert("Error : " + e);
+        }
+    }
+
     var $pageContent = $(".page-content");
     var $largeModal = $("#my-large-modal");
     var $simpleModal = $("#simpleModal");
@@ -300,7 +303,7 @@
     var loading = "<section class=\"wrapper site-min-height\"> " +
         "<div class=\"row mt\"> " +
         "<div class=\"col-sm-12 col-sm-12\"> " +
-        "<img class='center-block' src='assets/images/loading.gif'/>" +
+        "<img class='center-block' src='/assets/images/loading.gif'/>" +
         "</div>" +
         "</div>" +
         "</section>";
@@ -308,7 +311,7 @@
     var connectionError = "<section class=\"wrapper site-min-height\"> " +
         "<div class=\"row mt\"> " +
         "<div class=\"col-sm-12 col-sm-12\"> " +
-        "<img class='center-block' src='assets/images/ErrorConnection.gif'/>" +
+        "<img class='center-block' src='/assets/images/ErrorConnection.gif'/>" +
         "</div>" +
         "</div>" +
         "</section>";
@@ -334,4 +337,3 @@
         });
     }
 </script>
-</html>

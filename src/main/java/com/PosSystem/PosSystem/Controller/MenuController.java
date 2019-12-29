@@ -10,17 +10,31 @@ import org.springframework.web.servlet.ModelAndView;
 public class MenuController {
 
     @GetMapping("loadHome")
-    public String loadHome(){
+    public ModelAndView loadHome(){
+        System.out.println("MenuController => loadHome");
+        ModelAndView modelAndView = new ModelAndView();
         try{
-            ModelAndView modelAndView = new ModelAndView();
-            modelAndView.addObject("appName", "Maruthi Printers");
-            System.out.println("MenuController => loadHome");
-            return "home";
+            modelAndView.setViewName("home");
+            modelAndView.addObject("appName", "POS System");
         }
         catch (Exception e){
             System.out.println("Error: " + e);
-            return "";
         }
+        return modelAndView;
+    }
+
+    @GetMapping("loadMaterial")
+    public String loadMaterial(){
+        System.out.println("MenuController => loadMaterial");
+        String view;
+        try{
+            view = "material/view-search-material";
+        }
+        catch (Exception e){
+            System.out.println("Error: " + e);
+            view = "";
+        }
+        return view;
     }
 
 }
