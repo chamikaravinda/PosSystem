@@ -6,8 +6,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-@RequestMapping("menu")
 public class MenuController {
+
+//    Root Call
+    @RequestMapping("/")
+    public String root(){
+        System.out.println("Root controller... Default page");
+        return "Login/login";
+    }
 
     @GetMapping("loadHome")
     public ModelAndView loadHome(){

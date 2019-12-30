@@ -22,7 +22,7 @@ public class MaterialController {
     @GetMapping("loadMaterialList")
     public ModelAndView loadMaterialList(){
         System.out.println("MaterialController => loadMaterialList");
-        ModelAndView modelAndView = new ModelAndView("materials/view-materials");
+        ModelAndView modelAndView = new ModelAndView("material/view-materials");
         try{
             List<Material> materialList = (List<Material>) materialDao.findAll();
             modelAndView.addObject("materialList", materialList);

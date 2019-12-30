@@ -113,6 +113,15 @@
                         </a>
                     </li>
 
+                    <li class="nav-item">
+                        <a id = "Test" class="nav-link ripple active fuse-ripple-ready" onclick="loadContent('Test')" href="#">
+                            <i class="icon s-4 icon-clipboard-text"></i>
+
+                            <span>Test</span>
+
+                        </a>
+                    </li>
+
 <!--                    <li class="nav-item" role="tab" id="heading-dashboards4">-->
 <!--                        <a class="nav-link ripple with-arrow collapsed active" data-toggle="collapse"-->
 <!--                           data-target="#collapse-dashboards4" href="#" aria-expanded="false"-->
@@ -270,14 +279,43 @@
             document.getElementById("Materials").style.backgroundColor = "#0123b3"; // forecolor
             loadMaterial();
         }
+        else if(button == "Test"){
+            document.getElementById("Test").style.backgroundColor = "#0123b3"; // forecolor
+            loadTest();
+        }
     }
+
     function resetTabs() {
         document.getElementById("Materials").style.backgroundColor = "#2195f2"; // forecolor
+        document.getElementById("Test").style.backgroundColor = "#2195f2"; // forecolor
     }
+
     function loadMaterial(){
         try{
             $.ajax({
-                url: "loadMaterial",
+                url: "material/loadMaterialList",
+                method: 'GET',
+                beforeSend: function () {
+                    $pageContent.display(loading);
+                },
+                success: function (data) {
+                    $pageContent.display(data);
+                },
+                error: function () {
+                    $pageContent.display(connectionError);
+                    msgError('Oh No!', 'Error.');
+                }
+            });
+        }
+        catch(e){
+            alert("Error : " + e);
+        }
+    }
+
+    function loadTest(){
+        try{
+            $.ajax({
+                url: "test/loadTest",
                 method: 'GET',
                 beforeSend: function () {
                     $pageContent.display(loading);
